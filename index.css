@@ -2,14 +2,24 @@
 {
     font-family:Raleway;
     background-color:#113;
+    transition:ease-in-out 1s;
+}
+
+#dimmer {
+    width:100vw;
+    height:100vh;
+    background-color:rgba(0,0,0,0.75);
+    position:absolute;
+    left:0px;
+    top:0px;
 }
 
 #clipping_container {
     position:fixed;
-    width:100vw;
-    height:100vh;
-    left:calc(50% - 50vw);   /*Should be equal to calc(50% - width/2)*/
-    top:calc(50% - 50vh);   /*Should be equal to calc(50% - height/2)*/
+    width:80vw;
+    height:80vh;
+    left:calc(50% - 40vw);   /*Should be equal to calc(50% - width/2)*/
+    top:calc(50% - 40vh);   /*Should be equal to calc(50% - height/2)*/
     overflow-x:hidden;
     overflow-y:auto;
     box-shadow:#000 0px 0px 50px;
@@ -19,7 +29,7 @@
 .card {
     max-width:100vw;
     width:100%;
-    height:100vh;
+    height:100%;
     background-color:#DDD;
     margin-left:auto;
     margin-right:auto;
@@ -50,12 +60,15 @@
     margin-right:auto;
     line-height:60px;
     vertical-align:middle;
+    color:#FFF;
+    text-shadow: 0px 4px 0px rgba(0,0,0,0.5);
 }
 
 .card_body {
     height:100%;
+    overflow-wrap:break-word;
     overflow-y:auto;
     margin-left:80px;   /*Should be equal to the width of .card_header*/
     padding-left:30px;
-    margin-right: 350px; /*Should be equal to the spacing between cards times (1-the number of cards) plus padding-left plus any additional desired margin*/
+    margin-right: 510px; /*Should be equal to the spacing between cards times (1-the number of cards) plus padding-left plus any additional desired margin*/
 }
