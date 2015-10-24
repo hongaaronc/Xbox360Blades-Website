@@ -1,7 +1,7 @@
 ﻿body
 {
     font-family:Raleway;
-    background-color:#113;
+    background-color:#FFF;
     transition:ease-in-out 1s;
 }
 
@@ -36,7 +36,7 @@
     left:calc(100% - 0px);
     position:absolute;
     top:0px;
-    transition:ease-in-out 1s;
+    transition:ease-in-out 0.75s;
     opacity:0;
 }
 
@@ -49,6 +49,7 @@
     background-color:#999;
     position:absolute;
     overflow-wrap:break-word;
+    word-wrap:break-word;
     box-shadow:#333 0px 0px 20px;
     text-align:center;
     vertical-align:middle;
@@ -67,8 +68,9 @@
 .card_body {
     height:100%;
     overflow-wrap:break-word;
+    word-wrap:break-word;
     overflow-y:auto;
     margin-left:80px;   /*Should be equal to the width of .card_header*/
     padding-left:30px;
-    margin-right: 510px; /*Should be equal to the spacing between cards times (1-the number of cards) plus padding-left plus any additional desired margin*/
+    margin-right: 480px; /*Should be equal to the spacing between cards times (1-the number of cards) plus padding-left plus any additional desired margin*/
 }
