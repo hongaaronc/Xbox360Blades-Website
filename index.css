@@ -1,8 +1,10 @@
-﻿body
+﻿/* Template stuff */
+
+body
 {
     font-family:Raleway;
     background-color:#FFF;
-    transition:ease-in-out 1s;
+    transition:linear 0.2s;
 }
 
 #dimmer {
@@ -70,7 +72,37 @@
     overflow-wrap:break-word;
     word-wrap:break-word;
     overflow-y:auto;
-    margin-left:80px;   /*Should be equal to the width of .card_header*/
-    padding-left:30px;
-    margin-right: 480px; /*Should be equal to the spacing between cards times (1-the number of cards) plus padding-left plus any additional desired margin*/
+    margin-left:80px;   /*Spacing between cards, Should be equal to the width of .card_header*/
+    padding-left:0px;
+    margin-right: 370px; /*Should be equal to the spacing between cards times (1-the number of cards) plus padding-left plus any additional desired margin*/
+}
+
+/* Home Section Stuff */
+
+
+/* Games Section Stuff */
+
+.works_list {
+    text-align:center;
+}
+
+.works_list li {
+    list-style:none;
+    display:inline-block;
+    margin:10px;
+    margin-bottom:30px;
+    vertical-align:top;
+}
+
+.works_list h3 {
+    text-align:center;
+    margin:auto;
+    width:200px;
+}
+
+.work_thumbnail {
+    width:200px;
+    height:200px;
+    background-color:#CCC;
+    border-radius:50%;
 }
