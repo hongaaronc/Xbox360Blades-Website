@@ -1,6 +1,6 @@
 //Settings
 var borderSpaceLeft = 0;
-var borderSpaceRight = 0;
+var borderSpaceRight = 80;  //Should be set to same as card spacing
 var cardSpacing = 80;
 
 //Global variables. DO NOT TOUCH
