@@ -72,15 +72,21 @@ body
     overflow-wrap:break-word;
     word-wrap:break-word;
     overflow-y:auto;
-    margin-left:80px;   /*Spacing between cards, Should be equal to the width of .card_header*/
+    margin-left:80px;   /*Should be equal to the width of .card_header*/
     padding-left:0px;
-    margin-right: 370px; /*Should be equal to the spacing between cards times (1-the number of cards) plus padding-left plus any additional desired margin*/
+    margin-right:320px; /*Should be equal to the spacing between cards (Found in index.js) times (1-the number of cards) plus padding-left plus any additional desired margin*/
 }
 
 /* Home Section Stuff */
 
 
 /* Games Section Stuff */
+.games_category {
+    font-size:36px;
+    color:#999;
+    text-align:center;
+}
+
 
 .works_list {
     text-align:center;

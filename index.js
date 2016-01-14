@@ -1,6 +1,11 @@
+//Settings
+var borderSpaceLeft = 0;
+var borderSpaceRight = 0;
+var cardSpacing = 80;
+
+//Global variables. DO NOT TOUCH
 var selectedCard;
 
-// JavaScript source code
 function selectIndex(index) {
     var cards = document.getElementsByClassName("card");
     if (index < 0)  //If a negative index is given
@@ -17,9 +22,6 @@ function select(card) {
 function activateSelected() {
     var cards = document.getElementsByClassName("card");
     var selectedIndex = 0;
-    var borderSpaceLeft = 0;
-    var borderSpaceRight = 80;
-    var cardSpacing = 80;
     for (var i = 0; i < cards.length; i++) {
         if (cards[i] == selectedCard) {
             selectedIndex = i;
