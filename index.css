@@ -39,7 +39,7 @@ body
     position:absolute;
     top:0px;
     transition:ease-in-out 0.75s;
-    opacity:0;
+    opacity:1.0;
 }
 
 .card_header {
@@ -100,15 +100,31 @@ body
     vertical-align:top;
 }
 
+.works_list a {
+    text-decoration:none;
+}
+
 .works_list h3 {
     text-align:center;
     margin:auto;
     width:200px;
+    text-decoration:none;
+    color:#000;
 }
 
 .work_thumbnail {
     width:200px;
     height:200px;
     background-color:#CCC;
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
     border-radius:50%;
+    margin:10px;
+    border:0px solid #999;
+}
+
+.works_list li a:hover .work_thumbnail {
+    margin:0px;
+    border:10px solid #999;
 }
