@@ -4,7 +4,7 @@ body
 {
     font-family:Raleway;
     background-color:#FFF;
-    transition:linear 0.2s;
+    transition:linear 0.17s;
 }
 
 #dimmer {
@@ -78,6 +78,20 @@ body
 }
 
 /* Home Section Stuff */
+
+/* About Section Stuff*/
+#about h1 {
+    font-size: 60px;
+    margin: 50px;
+}
+
+#about p {
+     font-size:18px;
+     margin-left:70px;
+     margin-right:70px;
+     margin-top:40px;
+     margin-bottom:40px;
+}
 
 
 /* Games Section Stuff */
