@@ -62,9 +62,21 @@ body
     margin-left:auto;
     margin-right:auto;
     line-height:60px;
+    text-align:center;
     vertical-align:middle;
     color:#FFF;
     text-shadow: 0px 4px 0px rgba(0,0,0,0.5);
+    /*Include next 2 lines of code and one of the blocks below to rotate text*/
+    width:80vh;
+    height:80px;
+    /*Include next 3 lines of code for positive rotation*/
+    /*margin-top:-80px;
+    transform: rotate(90deg);
+    transform-origin: 0% 100%;*/
+    /*Include next 3 lines of code for negative rotation*/
+    margin-top:80vh;
+    transform: rotate(-90deg);
+    transform-origin: 0% 0%;
 }
 
 .card_body {
