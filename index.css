@@ -4,7 +4,7 @@ body
 {
     font-family:Raleway;
     background-color:#FFF;
-    transition:linear 0.17s;
+    transition:linear 0.1s;
 }
 
 #dimmer {
@@ -71,12 +71,62 @@ body
     height:80px;
     /*Include next 3 lines of code for positive rotation*/
     /*margin-top:-80px;
-    transform: rotate(90deg);
-    transform-origin: 0% 100%;*/
+    transform-origin: 0% 100%;
+    transform: rotate(90deg);*/
     /*Include next 3 lines of code for negative rotation*/
     margin-top:80vh;
-    transform: rotate(-90deg);
     transform-origin: 0% 0%;
+    transform: rotate(-90deg);
+}
+
+.card_header_rotation_container {
+    height:80px;
+    animation-duration:0.75s;
+    animation-fill-mode:forwards;
+}
+
+.card_header_alignment_container {
+    height:80px;
+    display:inline;
+    vertical-align:middle;
+}
+
+@keyframes header_rotation {
+    0% {
+        transform-origin: 50% 50%;
+        transform: rotateX(0deg) rotateZ(0deg);
+    }
+    49.999999999999% {
+        transform-origin: 50% 50%;
+        transform: rotateX(90deg) rotateZ(0deg);
+    }
+    50% {
+        transform-origin: 50% 50%;
+        transform: rotateX(-90deg) rotateZ(180deg);
+    }
+    100% {
+        transform-origin: 50% 50%;
+        transform: rotateX(0deg) rotateZ(180deg);
+    }
+}
+
+@keyframes header_rotation_reverse {
+    100% {
+        transform-origin: 50% 50%;
+        transform: rotateX(0deg) rotateZ(0deg);
+    }
+    50% {
+        transform-origin: 50% 50%;
+        transform: rotateX(90deg) rotateZ(0deg);
+    }
+    49.999999999999% {
+        transform-origin: 50% 50%;
+        transform: rotateX(-90deg) rotateZ(180deg);
+    }
+    0% {
+        transform-origin: 50% 50%;
+        transform: rotateX(0deg) rotateZ(180deg);
+    }
 }
 
 .card_body {

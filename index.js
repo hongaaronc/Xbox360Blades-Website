@@ -32,12 +32,14 @@ function activateSelected() {
         cards[i].style.opacity = "1";
         cards[i].style.webkitFilter = "grayscale(90%) brightness(50%)";
         cards[i].style.filter = "grayscale(90%) brightness(50%)";
+        document.getElementsByClassName("card_header_rotation_container")[i].style.webkitAnimationName = "header_rotation_reverse";
     }
     for (var i = selectedIndex + 1; i < cards.length; i++) {    //For all cards to the right of the selected card
         cards[i].style.left = document.getElementById("clipping_container").clientWidth - ((cards.length - 1) * cardSpacing) - borderSpaceRight + "px";
         cards[i].style.opacity = "1";
         cards[i].style.webkitFilter = "grayscale(90%) brightness(50%)";
         cards[i].style.filter = "grayscale(90%) brightness(50%)";
+        document.getElementsByClassName("card_header_rotation_container")[i].style.webkitAnimationName = "header_rotation";
     }
     //For the selected card
     //selectedCard.style.left = ((window.innerWidth - selectedCard.offsetWidth) / 2) + "px";    Use this if you want the selected card to be centered
@@ -45,5 +47,6 @@ function activateSelected() {
     selectedCard.style.opacity = "1.0";
     selectedCard.style.webkitFilter = "grayscale(0%) brightness(100%)";
     selectedCard.style.filter = "grayscale(0%) brightness(100%)";
+    document.getElementsByClassName("card_header_rotation_container")[selectedIndex].style.webkitAnimationName = "header_rotation_reverse";
     document.body.style.backgroundColor = selectedCard.getElementsByClassName("card_header")[0].style.backgroundColor;
 }
