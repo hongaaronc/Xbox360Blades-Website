@@ -1,0 +1,256 @@
+﻿/* Template stuff */
+
+body
+{
+    font-family:Raleway;
+    background-color:#FFF;
+    transition:linear 0.1s;
+    overflow-x:hidden;
+    overflow-y:auto;
+}
+
+#dimmer {
+    width:100vw;
+    height:100vh;
+    background-color:rgba(0,0,0,0.75);
+    position:absolute;
+    left:0px;
+    top:0px;
+}
+
+#clipping_container {
+    position:fixed;
+    width:100vw;
+    height:100vh;
+    left:calc(50% - 50vw);   /*Should be equal to calc(50% - width/2)*/
+    top:calc(50% - 50vh);   /*Should be equal to calc(50% - height/2)*/
+    overflow-x:hidden;
+    overflow-y:auto;
+    box-shadow:#000 0px 0px 50px;
+    background-color:#CCC;
+}
+
+.card {
+    max-width:100vw;
+    width:100%;
+    height:100%;
+    background-color:#DDD;
+    margin-left:auto;
+    margin-right:auto;
+    left:calc(100% - 0px);
+    position:absolute;
+    top:0px;
+    transition:ease-in-out 0.75s;
+    opacity:1.0;
+}
+
+.card_header {
+    width:50px; /*Should be equal to the margin-left of .card_body*/
+    height:100%;
+    margin:0px;
+    top:0px;
+    left:0px;
+    background-color:#999;
+    position:absolute;
+    overflow-wrap:break-word;
+    word-wrap:break-word;
+    box-shadow:#333 0px 0px 20px;
+    text-align:center;
+    vertical-align:middle;
+}
+
+.card_header h1 {
+    font-size:36px;
+    margin-left:auto;
+    margin-right:auto;
+    line-height:50px;   /*Make equal to .card_header height*/
+    text-align:center;
+    color:#FFF;
+    text-shadow: 0px 4px 0px rgba(0,0,0,0.5);
+    /*Include next 2 lines of code and one of the blocks below to rotate text*/
+    width:80vh;
+    height:50px;
+    /*Include next 3 lines of code for positive rotation*/
+    /*margin-top:-80px;
+    transform-origin: 0% 100%;
+    transform: rotate(90deg);*/
+    /*Include next 3 lines of code for negative rotation*/
+    margin-top:80vh;
+    transform-origin: 0% 0%;
+    transform: rotate(-90deg);
+}
+
+.card_header_rotation_container {
+    height:50px;
+    animation-duration:0.75s;
+    animation-fill-mode:forwards;
+}
+
+.card_header_alignment_container {
+    height:50px;
+    display:inline;
+}
+
+@keyframes header_rotation {
+    0% {
+        transform-origin: 50% 50%;
+        transform: rotateX(0deg) rotateZ(0deg);
+    }
+    49.999999999999% {
+        transform-origin: 50% 50%;
+        transform: rotateX(90deg) rotateZ(0deg);
+    }
+    50% {
+        transform-origin: 50% 50%;
+        transform: rotateX(-90deg) rotateZ(180deg);
+    }
+    100% {
+        transform-origin: 50% 50%;
+        transform: rotateX(0deg) rotateZ(180deg);
+    }
+}
+
+@keyframes header_rotation_reverse {
+    100% {
+        transform-origin: 50% 50%;
+        transform: rotateX(0deg) rotateZ(0deg);
+    }
+    50% {
+        transform-origin: 50% 50%;
+        transform: rotateX(90deg) rotateZ(0deg);
+    }
+    49.999999999999% {
+        transform-origin: 50% 50%;
+        transform: rotateX(-90deg) rotateZ(180deg);
+    }
+    0% {
+        transform-origin: 50% 50%;
+        transform: rotateX(0deg) rotateZ(180deg);
+    }
+}
+
+.card_body {
+    height:100%;
+    overflow-wrap:break-word;
+    word-wrap:break-word;
+    overflow-y:auto;
+    margin-left:50px;   /*Should be equal to the width of .card_header*/
+    padding-left:0px;
+    margin-right:250px; /*Should be equal to the spacing between cards (Found in index.js) times (1-the number of cards) plus padding-left plus any additional desired margin*/
+}
+
+/* Home Section Stuff */
+
+/* About Section Stuff*/
+#about h1 {
+    font-size: 60px;
+    margin: 50px;
+}
+
+#about p {
+     font-size:18px;
+     margin-left:70px;
+     margin-right:70px;
+     margin-top:40px;
+     margin-bottom:40px;
+}
+
+
+/* Games Section Stuff */
+.games_category {
+    font-size:36px;
+    color:#999;
+    text-align:center;
+}
+
+
+.works_list {
+    text-align:center;
+}
+
+.works_list li {
+    list-style:none;
+    display:inline-block;
+    margin:10px;
+    margin-bottom:30px;
+    vertical-align:top;
+}
+
+.works_list a {
+    text-decoration:none;
+}
+
+.works_list h3 {
+    text-align:center;
+    margin:auto;
+    width:200px;
+    text-decoration:none;
+    color:#000;
+}
+
+.work_thumbnail {
+    width:200px;
+    height:200px;
+    background-color:#CCC;
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    border-radius:50%;
+    margin:10px;
+    border:0px solid #999;
+}
+
+.works_list li a:hover .work_thumbnail {
+    margin:0px;
+    border:10px solid #999;
+}
+
+.contact_list li {
+    list-style:none;
+    margin:10px;
+    margin-bottom:30px;
+    vertical-align:top;
+}
+
+.contact_list a {
+    text-decoration:none;
+    color:#000;
+}
+
+.contact_list span {
+    font-size:48px;
+    text-align:center;
+    margin:auto;
+    width:200px;
+    text-decoration:none;
+    color:#000;
+}
+
+.contact_thumbnail {
+    width:100px;
+    height:100px;
+    background-color:#CCC;
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    border-radius:50%;
+    margin:10px;
+    border:0px solid #999;
+    display:inline-block;
+    vertical-align:middle;
+}
+
+.contact_body {
+    display:inline-block;
+    vertical-align:middle;
+}
+
+.contact_body h5 {
+    font-size:24px;
+    margin:0px;
+}
+
+.contact_list li a:hover .contact_thumbnail {
+    margin:0px;
+    border:10px solid #999;
+}
