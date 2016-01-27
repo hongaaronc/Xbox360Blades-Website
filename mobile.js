@@ -1,7 +1,7 @@
 //Settings
 var borderSpaceLeft = 0;
-var borderSpaceRight = 34;  //Should be set to same as card spacing
-var cardSpacing = 50;
+var borderSpaceRight = 70;  //Should be set to same as card spacing
+var cardSpacing = 70;
 
 //Global variables. DO NOT TOUCH
 var selectedCard;
@@ -35,7 +35,7 @@ function activateSelected() {
         headerRotationContainers[i].style.webkitAnimationName = "header_rotation_reverse";
     }
     for (var i = selectedIndex + 1; i < cards.length; i++) {    //For all cards to the right of the selected card
-        cards[i].style.left = document.body.clientWidth - ((cards.length - 1) * cardSpacing) - borderSpaceRight + "px";
+        cards[i].style.left = document.getElementById("clipping_container").clientWidth - ((cards.length - 1) * cardSpacing) - borderSpaceRight + "px";
         cards[i].style.webkitFilter = "grayscale(90%) brightness(50%)";
         cards[i].style.filter = "grayscale(90%) brightness(50%)";
         headerRotationContainers[i].style.webkitAnimationName = "header_rotation";

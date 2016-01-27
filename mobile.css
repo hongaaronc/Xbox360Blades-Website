@@ -5,8 +5,6 @@ body
     font-family:Raleway;
     background-color:#FFF;
     transition:linear 0.1s;
-    overflow-x:hidden;
-    overflow-y:auto;
 }
 
 #dimmer {
@@ -45,7 +43,7 @@ body
 }
 
 .card_header {
-    width:50px; /*Should be equal to the margin-left of .card_body*/
+    width:70px; /*Should be equal to the margin-left of .card_body*/
     height:100%;
     margin:0px;
     top:0px;
@@ -60,16 +58,16 @@ body
 }
 
 .card_header h1 {
-    font-size:36px;
+    font-size:48px;
     margin-left:auto;
     margin-right:auto;
-    line-height:50px;   /*Make equal to .card_header height*/
+    line-height:70px;   /*Make equal to .card_header height*/
     text-align:center;
     color:#FFF;
     text-shadow: 0px 4px 0px rgba(0,0,0,0.5);
     /*Include next 2 lines of code and one of the blocks below to rotate text*/
     width:80vh;
-    height:50px;
+    height:70px;
     /*Include next 3 lines of code for positive rotation*/
     /*margin-top:-80px;
     transform-origin: 0% 100%;
@@ -81,13 +79,13 @@ body
 }
 
 .card_header_rotation_container {
-    height:50px;
+    height:70px;
     animation-duration:0.75s;
     animation-fill-mode:forwards;
 }
 
 .card_header_alignment_container {
-    height:50px;
+    height:70px;
     display:inline;
 }
 
@@ -136,7 +134,7 @@ body
     overflow-y:auto;
     margin-left:50px;   /*Should be equal to the width of .card_header*/
     padding-left:0px;
-    margin-right:250px; /*Should be equal to the spacing between cards (Found in index.js) times (1-the number of cards) plus padding-left plus any additional desired margin*/
+    margin-right:420px; /*Should be equal to the spacing between cards (Found in index.js) times (1-the number of cards) plus padding-left plus any additional desired margin*/
 }
 
 /* Home Section Stuff */
