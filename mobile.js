@@ -30,20 +30,20 @@ function activateSelected() {
     }
     for (var i = 0; i < selectedIndex; i++) {   //For all cards to the left of the selected card
         cards[i].style.top = borderSpaceTop + "px";
-        cards[i].style.webkitFilter = "grayscale(90%) brightness(50%)";
-        cards[i].style.filter = "grayscale(90%) brightness(50%)";
+        /*cards[i].style.webkitFilter = "grayscale(90%) brightness(50%)";
+        cards[i].style.filter = "grayscale(90%) brightness(50%)";*/
         /*headerRotationContainers[i].style.webkitAnimationName = "header_rotation_reverse";*/
     }
     for (var i = selectedIndex + 1; i < cards.length; i++) {    //For all cards to the bottom of the selected card
         cards[i].style.top = document.getElementById("clipping_container").clientHeight - ((cards.length - 1) * cardSpacing) - borderSpaceBottom + "px";
-        cards[i].style.webkitFilter = "grayscale(90%) brightness(50%)";
-        cards[i].style.filter = "grayscale(90%) brightness(50%)";
+        /*cards[i].style.webkitFilter = "grayscale(90%) brightness(50%)";
+        cards[i].style.filter = "grayscale(90%) brightness(50%)";*/
         /*headerRotationContainers[i].style.webkitAnimationName = "header_rotation";*/
     }
     //For the selected card
     //selectedCard.style.top = ((window.innerHeight - selectedCard.offsetHeight) / 2) + "px";    Use this if you want the selected card to be centered
     selectedCard.style.top = borderSpaceTop + "px";   //Use this if you want the select card to be top aligned
-    selectedCard.style.webkitFilter = "grayscale(0%) brightness(100%)";
-    selectedCard.style.filter = "grayscale(0%) brightness(100%)";
+    /*selectedCard.style.webkitFilter = "grayscale(0%) brightness(100%)";
+    selectedCard.style.filter = "grayscale(0%) brightness(100%)";*/
     /*headerRotationContainers[selectedIndex].style.webkitAnimationName = "header_rotation_reverse";*/
 }

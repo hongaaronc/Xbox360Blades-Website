@@ -124,7 +124,7 @@ body
     word-wrap:break-word;
     overflow-y:auto;
     margin-top:50px;   /*Should be equal to the width of .card_header*/
-    padding-left:0px;
+    padding-top:0px;
     margin-bottom:420px; /*Should be equal to the spacing between cards (Found in index.js) times (1-the number of cards) plus padding-left plus any additional desired margin*/
 }
 
@@ -137,7 +137,7 @@ body
 }
 
 #about p {
-     font-size:18px;
+     font-size:14px;
      margin-left:70px;
      margin-right:70px;
      margin-top:40px;
