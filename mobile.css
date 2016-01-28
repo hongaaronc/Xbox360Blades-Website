@@ -119,20 +119,19 @@ body
 }
 
 .card_body {
-    height:100%;
+    height:calc(100% - 420px); /* 100% - (the spacing between cards (Found in index.js) times (1-the number of cards) plus padding-top plus any additional desired margin) */
     overflow-wrap:break-word;
     word-wrap:break-word;
     overflow-y:auto;
-    margin-top:50px;   /*Should be equal to the width of .card_header*/
+    margin-top:70px;   /*Should be equal to the width of .card_header*/
     padding-top:0px;
-    margin-bottom:420px; /*Should be equal to the spacing between cards (Found in index.js) times (1-the number of cards) plus padding-left plus any additional desired margin*/
 }
 
 /* Home Section Stuff */
 
 /* About Section Stuff*/
 #about h1 {
-    font-size: 60px;
+    font-size: 52px;
     margin: 50px;
 }
 
@@ -147,7 +146,7 @@ body
 
 /* Games Section Stuff */
 .games_category {
-    font-size:36px;
+    font-size:48px;
     color:#999;
     text-align:center;
 }
@@ -175,6 +174,7 @@ body
     width:200px;
     text-decoration:none;
     color:#000;
+    font-size:24px;
 }
 
 .work_thumbnail {
@@ -189,7 +189,7 @@ body
     border:0px solid #999;
 }
 
-.works_list li a:hover .work_thumbnail {
+.works_list li a:active .work_thumbnail {
     margin:0px;
     border:10px solid #999;
 }
@@ -239,7 +239,7 @@ body
     margin:0px;
 }
 
-.contact_list li a:hover .contact_thumbnail {
+.contact_list li a:active .contact_thumbnail {
     margin:0px;
     border:10px solid #999;
 }
