@@ -12,6 +12,14 @@
     <!--Fonts to include-->
     <link href='https://fonts.googleapis.com/css?family=Raleway:400,500,600,700,800,900' rel='stylesheet' type='text/css'>
     <!--JS Files to include-->
+    <script type="text/javascript">
+        if (screen.width <= 699) {
+            document.location = "mobile.html";
+        }
+        if ((navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPod/i))) {
+            location.replace("mobile.html");
+        }
+    </script>
     <script src="index.js"></script>
 </head>
 <body onload="selectIndex(0);" onresize="activateSelected();">
