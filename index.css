@@ -133,7 +133,7 @@ body
     overflow-y:auto;
     margin-left:50px;   /*Should be equal to the width of .card_header*/
     padding-left:0px;
-    margin-right:250px; /*Should be equal to the spacing between cards (Found in index.js) times (1-the number of cards) plus padding-left plus any additional desired margin*/
+    margin-right:200px; /*Should be equal to the spacing between cards (Found in index.js) times (1-the number of cards) plus padding-left plus any additional desired margin*/
 }
 
 /* Home Section Stuff */

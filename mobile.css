@@ -119,7 +119,7 @@ body
 }
 
 .card_body {
-    height:calc(100% - 420px); /* 100% - (the spacing between cards (Found in index.js) times (1-the number of cards) plus padding-top plus any additional desired margin) */
+    height:calc(100% - 350px); /* 100% - (the spacing between cards (Found in index.js) times (1-the number of cards) plus padding-top plus any additional desired margin) */
     overflow-wrap:break-word;
     word-wrap:break-word;
     overflow-y:auto;
