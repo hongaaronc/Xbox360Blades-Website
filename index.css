@@ -195,6 +195,7 @@ body
     border-radius:50%;
     margin:10px;
     border:0px solid #999;
+	overflow:hidden;
 }
 
 .works_list li a:hover .work_thumbnail {
