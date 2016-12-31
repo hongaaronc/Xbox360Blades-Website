@@ -14,7 +14,7 @@
     <!--JS Files to include-->
     <script src="mobile.js"></script>
 </head>
-<body onload="selectIndex(0);" onresize="activateSelected();">
+<body onresize="activateSelected();">
     <div id="clipping_container">
         <h1 style="font-size:90px; text-align:center; color:#999; margin-top:300px; margin-bottom:20px;">Welcome</h1>
         <h4 style="font-size:24px; text-align:center; color:#999; margin-top:0px;">Loading...</h4>
@@ -225,5 +225,11 @@
             </div>
         </div>
     </div>
+    <script>
+    // self executing function here
+    (function() {
+        selectIndex(0);
+    })();
+    </script>
 </body>
 </html>
